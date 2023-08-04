@@ -1,0 +1,108 @@
+.main-card {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+
+.three-cards {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.first-card {
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.first-card .card-image {
+    height: 50px;
+}
+
+.first-card .left-card-content {
+    width: 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-card .right-card-content {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-card {
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.second-card .left-card-content {
+    width: 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-card .right-card-content {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.second-card .card-image {
+    height: 50px;
+}
+
+.third-card {
+    height: auto;
+    width: auto;
+    display: flex;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.third-card .left-card-content{
+    width: 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-card .right-card-content{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.third-card .card-image {
+    height: 50px;
+}
+
+.card-image p{
+    color: grey;
+}

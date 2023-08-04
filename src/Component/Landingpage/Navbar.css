@@ -1,0 +1,289 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #263F4B;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  z-index: 1;
+}
+
+
+
+
+
+.client-area-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px;
+  background-color: #f9d71c;
+  /* Adjust the background color to a darker yellow */
+  border-radius: 15px;
+  /* text-decoration: none; */
+  height: 20px;
+  width: 100px;
+  font-size: 13px;
+}
+
+.client-area-btn .client-hov {
+  color: black;
+
+}
+
+.navbar-item.new-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #A5215E;
+  height: 25px;
+  width: 50px;
+  border-radius: 15px;
+  font-size: 13px;
+}
+
+/* Logo style */
+.navbar-logo h2 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  padding: 10px;
+  
+}
+
+/* Menu style */
+.navbar-menu {
+  display: flex;
+  padding: 20px 20px 20px 20px;
+  list-style: none;
+  gap: 5px;
+  height: auto;
+  width: auto;
+ 
+}
+
+.navbar-item {
+  display: flex;
+  margin-right: 20px;
+  font-size: 15px;
+  gap: 10px;
+
+}
+
+.navbar-item:last-child {
+  margin-right: 0;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  font-size: 15px;
+}
+
+/* Navbar Toggle Button */
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* Styling for the three bars of the toggle button */
+.bar {
+  width: 30px;
+  height: 3px;
+  margin: 6px 0;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+/* Styling for the open state of the toggle button */
+.open .bar.bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar.bar2 {
+  opacity: 0;
+}
+
+.open .bar.bar3 {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.navbar-dropdown a {
+  background-color: white;
+  color: black;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    /* Adjust the value to place the menu correctly */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .navbar-menu.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .navbar-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* new css */
+
+.navbar-item {
+  position: relative;
+
+}
+
+/* Dropdown */
+.navbar-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(130% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.line-animation {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 0;
+  background-color: white;
+  animation: drawLine 0.5s ease forwards;
+ opacity: 0;
+
+}
+
+/* home-dropdown */
+.home-dropdown{
+  display: none;
+  position: absolute;
+  top: calc(130% + 10px);
+  left: 50%;
+  transform: translateX(-50%);  
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.5s;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+
+.first-home-drop{
+ 
+  display: flex;
+}
+.second-home-drop{
+ 
+  display: flex;
+}
+
+.third-home-drop{
+ 
+  display: flex;
+}
+
+.navbar-item:hover .home-dropdown {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+.home-dropdown a {
+  display: block;
+  padding: 10px 20px;
+  color: #555;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.home-dropdown a:hover {
+  background-color: #f5f5f5;
+}
+
+
+@keyframes drawLine {
+  to {
+    height: 20px;
+    width: 100px;
+   
+    
+  }
+}
+
+.navbar-item:hover .navbar-dropdown {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar-dropdown a {
+  display: block;
+  padding: 10px 20px;
+  color: #555;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.navbar-dropdown a:hover {
+  background-color: #f5f5f5;
+}
+
+
+
+.navbar.scrolled {
+  background-color: #C2356E; 
+ 
+}
+
+
+
+

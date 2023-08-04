@@ -1,0 +1,131 @@
+.main-box {
+    width: 100%;
+    height: auto;
+   background-color: #F6F6F6;
+    padding: 20px;
+    display: flex;
+    padding-bottom: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.first-box {
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+   border-radius: 20px;
+   background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.parent-first{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.box1 .box-image{
+    height: 30px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+.box2 {
+    font-size: 17px;
+}
+.box-color{
+    color: #5e5b52;
+    font-size: 15px;
+}
+.first-box-firstcomponent{
+    background-color: #EE5586;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 20px;
+    gap: 20px;
+
+}
+.first-box-component {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.first-image-box {
+    height: 60px;
+}
+
+.first-text {
+    font-weight: 700;
+    color: #EE5586;
+    font-size: 25px;
+}
+.italic-text{
+    color: grey;
+    font-weight: 400;
+}
+.pricing-text{
+    font-weight: 400;
+    font-size: 28px;
+    display: flex;
+    
+}
+.pricing-text .price2{
+    font-size: 16px;
+    padding: 10px;  
+}
+.button{
+    background-color:#FDD700;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 100px;
+}
+.second-box {
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+   border-radius: 20px;
+   background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.second-box-firstcomponent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.third-box {
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+   border-radius: 20px;
+   background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.third-box-firstcomponent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
